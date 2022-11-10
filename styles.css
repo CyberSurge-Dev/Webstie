@@ -6,6 +6,9 @@
     margin: 0;
     padding: 0;
 }
+html {
+    scroll-behavior: smooth;
+}
 
 li,
 a,
@@ -23,6 +26,9 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: fixed;
+    width: 100%;
+    opacity: 0.8;
     padding: 6px 5%;
 }
 
@@ -41,16 +47,14 @@ header {
 .nav__links li a {
     text-decoration: none;
     margin: 10px 20px;
-    padding: 5px 10px;
+    padding: 10px 15px;
     transition: all 0.3s ease 0s;
 }
 
 .nav__links li a:hover {
-    margin: 5px 10px;
     text-decoration: none;
     background-color: rgb(72, 72, 72);
     border-radius: 18px;
-    padding: 10px 20px;
     color: white;
 }
 
@@ -81,6 +85,7 @@ header {
 }
 
 .content-box {
+    height: 100vh;
     font-family: "Montserrat-Alt1", sans-serif;
     font-weight: 700;
     font-size: 100px;
@@ -93,10 +98,12 @@ header {
 .content-box-border {
     font-family: "Montserrat-Alt1", sans-serif;
     padding: 20px;
-    border-radius: 25px;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    border-radius: 65px;
     margin-left: 8%;
     margin-right: 8%;
-    margin-top: 23%;
+    margin-bottom: 20%;
     color: white;
     font-size: 22px;
     font-weight: lighter;
@@ -106,6 +113,50 @@ header {
     opacity: 0.8;
 }
 
+.content-box-border li {
+    font-size: 42px;
+    align-items: center;
+    display: inline-block;
+    border-style: solid;
+    border: 3px grey;
+    text-align: left;
+
+    padding-top: 15%;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    width: 29%;
+    margin: 1%;
+    margin-top: 5%;
+    border-radius: 18px;
+    background-color: #45464d;
+    background-blend-mode: overlay;
+    transition: all 0.3s ease 0s;
+    color: #b5b8c6;
+
+}
+
+.content-box-border li#programmer {
+    background-image: url("images/webdev3.jpg");
+    background-size: cover;
+}
+
+.content-box-border li#webdev {
+    background-image: url("images/PROGRAMMER2.jpg");
+    background-size: cover;
+}
+
+.content-box-border li#student {
+    background-image: url("images/student3.jpg");
+    background-size: cover;
+}
+
+.content-box-border li:hover {
+    background-blend-mode: normal;
+    color: white;
+}
+
+
+
 .title {
     font-size: 80px;
     font-style: normal;
@@ -113,12 +164,107 @@ header {
 }
 
 .body-text {
-    font-family:Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     font-weight: 100;
 }
+
 .emph {
     color: rgb(34, 119, 238);
     text-decoration: none;
     font-style: normal;
     font-weight: bold;
+}
+
+.footer {
+    font-family: "Montserrat-Alt1", sans-serif;
+    font-size: 17px;
+    padding: 1%;
+    background-color: #24252a;
+    color: white;
+    opacity: 0.95;
+    width: 100%;
+    align-items: center;
+    text-align: center;
+}
+
+.footer img {
+    height: 35px;
+    width: auto;
+}
+
+.slide-left {
+    font-family: "Montserrat-Alt1", sans-serif;
+    padding: 2%;
+    background-color:#24252a;
+    margin: 2%;
+    opacity: 0.8;
+    border-radius: 50px;
+    margin-left: 8%;
+    margin-right: 30%;
+    display: inline-block;
+    border-style: solid;
+    border-color:#24252a;
+    border-width: 5px;
+    transition: all 0.3s ease 0s;
+}
+
+.slide-left img {
+    float: left;
+    height: 150px;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    margin-right: 2%;
+    scale: 100%;
+}
+
+.slide-title {
+    font-size: 36px;
+    color: white;
+    font-weight: bolder;
+}
+
+.slide-desc {
+    margin-top: 20px;
+    font-size: 22px;
+    color: white;
+}
+.content {
+    margin-top: 3%;
+    margin-bottom: 3%;
+}
+
+.slide-right {
+    font-family: "Montserrat-Alt1", sans-serif;
+    padding: 2%;
+    background-color: #24252a;
+    opacity: 0.8;
+    border-radius: 50px;
+    margin: 2%;
+    margin-left: 30%;
+    margin-right: 8%;
+    display: inline-block;
+    border-style: solid;
+    border-color:#24252a;
+    border-width: 5px;
+    transition: all 0.3s ease 0s;
+}
+
+.slide-right img {
+    float: right;
+    height: 150px;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    margin-left: 2%;
+    scale: 100%;
+}
+
+.slide-left:hover {
+    border-style: solid;
+    border-color: #b5b8c6;
+    border-width: 5px;
+}
+.slide-right:hover {
+    border-style: solid;
+    border-color: #b5b8c6;
+    border-width: 5px;
 }
